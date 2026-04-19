@@ -1,0 +1,150 @@
+.page-container {
+    Max-width : 1200px ;
+    Margin : 0 auto ;
+    Padding : 40px 20px ;
+}
+.page-header {
+    Text-align : center ;
+    Margin-bottom : 40px ;
+}
+.page-header h1 {
+    Font-size : 2rem ;
+    Color : #1a1a2e ;
+}
+.page-header h1 i {
+    Color : #ffcc00 ;
+    Margin-right : 15px ;
+}
+.profile-grid {
+    Display : grid ;
+    Grid-template-columns : 300px 1fr ;
+    Gap : 30px ;
+}
+.profile-sidebar {
+    Background : white ;
+    Border-radius : 20px ;
+    Overflow : hidden ;
+    Box-shadow : 0 5px 15px rgba(0,0,0,0.05) ;
+}
+.profile-avatar {
+    Text-align : center ;
+    Padding : 30px ;
+    Background : linear-gradient(135deg, #1a1a2e, #16213e) ;
+    Color : white ;
+}
+.profile-avatar i {
+    Font-size : 80px ;
+    Color : #ffcc00 ;
+    Margin-bottom : 15px ;
+}
+.profile-avatar h3 {
+    Margin-bottom : 5px ;
+}
+
+.profile-avatar p {
+    Opacity : 0.8 ;
+    Font-size : 14px ;
+}
+.profile-menu {
+    Padding : 15px ;
+}
+.menu-item {
+    Display : flex ;
+    Align-items : center ;
+    Gap : 12px ;
+    Padding : 12px 15px ;
+    Color : #1a1a2e ;
+    Text-decoration : none ;
+    Border-radius : 10px ;
+    Transition : background 0.3s ;
+}
+.menu-item :hover {
+    Background : #f0f0f0 ;
+}
+.menu-item.logout {
+    Color : #dc3545 ;
+}
+.menu-item i {
+    Width : 20px ;
+}
+.profile-content {
+    Background : white ;
+    Border-radius : 20px ;
+    Padding : 30px ;
+    Box-shadow : 0 5px 15px rgba(0,0,0,0.05) ;
+}
+.profile-section {
+    Margin-bottom : 30px ;
+    Padding-bottom : 30px ;
+    Border-bottom : 1px solid #eee ;
+}
+.profile-section :last-child {
+    Border-bottom : none ;
+    Margin-bottom : 0 ;
+    Padding-bottom : 0 ;
+}
+.profile-section h2 {
+    Color : #1a1a2e ;
+    Margin-bottom : 20px ;
+    Font-size : 1.3rem ;
+}
+.form-group {
+    Margin-bottom : 15px ;
+}
+.form-group label {
+    Display : block ;
+    Margin-bottom : 5px ;
+    Font-weight : 500 ;
+    Color : #666 ;
+}
+.form-group input, .form-group textarea {
+    Width : 100% ;
+    Padding : 10px 15px ;
+    Border : 2px solid #e9ecef ;
+    Border-radius : 10px ;
+    Font-family : inherit ;
+}
+.form-group input :focus, .form-group textarea :focus {
+    Outline : none ;
+    Border-color : #667eea ;
+}
+
+.btn-update, .btn-password {
+    Padding : 12px 25px ;
+    Border : none ;
+    Border-radius : 10px ;
+    Cursor : pointer ;
+    Font-size : 14px ;
+    Font-weight : 600 ;
+    Transition : all 0.3s ;
+}
+.btn-update {
+    Background : linear-gradient(135deg, #667eea, #764ba2) ;
+    Color : white ;
+}
+.btn-password {
+    Background : #28a745 ;
+    Color : white ;
+}
+.btn-update :hover, .btn-password :hover {
+    Transform : translateY(-2px) ;
+}
+.alert-success {
+    Background : #d4edda ;
+    Color : #155724 ;
+    Padding : 12px ;
+    Border-radius : 10px ;
+    Margin-bottom : 20px ;
+}
+.alert-error {
+    Background : #f8d7da ;
+    Color : #721c24 ;
+    Padding : 12px ;
+    Border-radius : 10px ;
+    Margin-bottom : 20px ;
+}
+@media (max-width : 768px) {
+    .profile-grid {
+        Grid-template-columns : 1fr ;
+    }
+}
